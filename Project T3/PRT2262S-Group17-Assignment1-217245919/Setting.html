@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Setting Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS.css">
+	<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+  </head>
+  <body>
+
+    <header>
+      <div class="navbar">
+        <a href="Homepage.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="Jobs.html"><i class="fa fa-fw fa-suitcase"></i> Jobs</a> 
+        <a href="Messagepage.html"><i class="fa fa-fw fa-envelope"></i> Messages</a>
+        <div class="left-dropdown">
+          <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-fw fa-user"></i>More 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="CreateJobpage.html"><i class="fa fa-suitcase"></i>Create Job</a>
+                <a href="Testimonials.html"><i class="fa fa-pencil-square-o"></i>Testimonials</a>
+                <a href="About.html"><i class="fa fa-group"></i>About</a>
+                <a href="Contact.html"><i class="fa fa-phone"></i>Contact</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa fa-fw fa-user"></i>Profile 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Profilepage.html"><i class="fa fa-id-card"></i>View Profile</a>
+            <a href="bookmarks.html"><i class="fa fa-bookmark"></i>Bookmarks</a> 
+            <a href="Setting.html"><i class="fa fa-gear"></i>Settings</a>
+            <a href="Loginpage.html"><i class="fa fa-sign-out"></i>Sign-out</a>
+          </div>
+        </div> 
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div> 
+      </div> 
+    </header>
+
+    <main>
+	
+	 <div class="row">
+        <div class="column ">
+          <div class="colmidContent">
+          <div class="card">
+            <img src="Profile pic.png" alt="Avatar" style="width:50%">
+            <div class="container">
+              <h4><b>User Name</b></h4> 
+              <p>User Profession </p> 
+            </div>
+          </div>
+          </div>
+        </div>
+		
+		
+      <div class="info-section">
+        <h1>Settings</h1>
+      </div>
+      
+	  <div class="column middle">
+	  
+	  <h1>Notifications</h1>
+	  <p>Turn on Notifications on</p>
+	       <label class="switch">
+              <input type="checkbox">
+             <span class="slider round"></span>
+             </label>
+	 
+	  <h2> History </h2>
+	  <p>After 30 Days delete history</p>
+	  <label class="switch">
+              <input type="checkbox">
+             <span class="slider round"></span>
+             </label>
+			 
+			 <h3>Search</h3>
+			 <p>companies can search you </p>
+			  <label class="switch">
+              <input type="checkbox">
+             <span class="slider round"></span>
+             </label>
+			 
+			 <h4>Website Cookies</h4>
+			 <p>Accept of Cookies</p>
+	          <label class="switch">
+              <input type="checkbox">
+             <span class="slider round"></span>
+             </label>
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+	  
+	  </div>
+      
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>@Group14 
+          <i class="fa fa-facebook-square"><a href="#"></a></i>
+          <i class="fa fa-twitter-square"><a href="#"></a></i>
+          <i class="fa fa-instagram"><a href="#"></a></i>
+        </p>
+      </div>
+    </footer>
+
+  </body>
+</html>
